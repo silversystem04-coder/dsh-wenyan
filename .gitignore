@@ -1,0 +1,7 @@
+tmp/
+node_modules/
+*.log
+*.zip
+test/visual.html
+test/visual-on.html
+dist/

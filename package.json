@@ -1,0 +1,53 @@
+{
+  "name": "dsh-wenyan",
+  "version": "0.1.0",
+  "description": "DSH 插件：文言模式。开了以后，DSH 的回答与思考链改用文言（三档：雅正 / 简古 / 骈俪），右侧栏有面板随时关掉。 / Classical-Chinese mode for DeepSeek Harness replies and reasoning.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "install.ps1",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "wenyan",
+    "classical-chinese",
+    "tone"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "silversystem04-coder",
+  "homepage": "https://github.com/silversystem04-coder/dsh-wenyan#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silversystem04-coder/dsh-wenyan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/silversystem04-coder/dsh-wenyan/issues"
+  }
+}
