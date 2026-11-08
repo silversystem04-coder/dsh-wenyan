@@ -44,10 +44,13 @@
 ## 装
 
 ```bash
-# A. 直接从 GitHub 装
+# A. 从 npm 装（推荐，插件市场里也是这个）
+dsh plugin --profile web add dsh-wenyan
+
+# B. 直接从 GitHub 装
 dsh plugin --profile web add github:silversystem04-coder/dsh-wenyan
 
-# B. 从本地源码装
+# C. 从本地源码装
 powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 ```
 
